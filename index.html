@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharmesh Rathod | Full Stack Developer</title>
+    <style>
+        :root {
+            --bg-color: #0f0f11;
+            --card-bg: #1a1b1e;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --accent: #7c4dff; /* Deep Purple */
+            --accent-hover: #9965f4;
+            --code-green: #00e676;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+        .logo { font-weight: bold; font-size: 1.2rem; letter-spacing: 1px; }
+        .logo span { color: var(--accent); }
+
+        /* Hero Section */
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        .badge {
+            background: rgba(124, 77, 255, 0.1);
+            color: var(--accent);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            border: 1px solid rgba(124, 77, 255, 0.2);
+        }
+
+        h1 { font-size: 3.5rem; margin-bottom: 15px; line-height: 1.1; }
+        h1 span { color: var(--text-muted); font-weight: 300; display: block; font-size: 1.5rem; margin-top: 10px; }
+
+        p.bio { max-width: 600px; color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem; }
+
+        /* Tech Stack Grid */
+        .tech-stack {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .tech-item {
+            background: var(--card-bg);
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: 1px solid #333;
+            font-size: 0.9rem;
+            color: var(--code-green);
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* Buttons */
+        .btn-group { display: flex; gap: 15px; }
+        .btn {
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-primary { background-color: var(--accent); color: white; }
+        .btn-primary:hover { background-color: var(--accent-hover); transform: translateY(-2px); }
+        .btn-outline { border: 1px solid #444; color: var(--text-main); }
+        .btn-outline:hover { border-color: var(--text-main); background: #222; }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            border-top: 1px solid #333;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .hero { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">dharmesh<span>.dev</span></div>
+        <div style="font-size: 0.9rem; color: #666;">v1.0.0</div>
+    </nav>
+
+    <div class="hero">
+        <div class="badge">Available for Hire</div>
+        
+        <h1>Dharmesh Rathod
+            <span>Full Stack Developer & Linux Enthusiast</span>
+        </h1>
+
+        <p class="bio">
+            Specializing in <b>PHP/Laravel</b> backends and <b>Flutter</b> mobile apps. 
+            Currently building <i>Embshark</i> and scalable CMS solutions. 
+            Running on Ubuntu 24.04.
+        </p>
+
+        <div class="tech-stack">
+            <div class="tech-item">$ php --version</div>
+            <div class="tech-item">$ flutter doctor</div>
+            <div class="tech-item">MySQL</div>
+            <div class="tech-item">Linux/KVM</div>
+            <div class="tech-item">Digital Marketing</div>
+        </div>
+
+        <div class="btn-group">
+            <a href="mailto:your-email@gmail.com" class="btn btn-primary">Contact Me</a>
+            <a href="#" class="btn btn-outline">View GitHub</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Dharmesh Rathod. Hosted on Vercel.
+    </footer>
+
+</body>
+</html>
